@@ -1,4 +1,4 @@
-import jdk.internal.vm.PostVMInitHook;
+// import jdk.internal.vm.PostVMInitHook;
 
 // Write a non static method called "show_excitement" where the string
 // "I am super excited for this course!" is returned exactly
