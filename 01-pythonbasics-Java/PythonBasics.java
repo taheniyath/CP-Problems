@@ -19,7 +19,7 @@ public class PythonBasics {
 		return s;
 	}
 	public static void main(String[] args) {
-		// PythonBasics s = new PythonBasics();
-		// System.out.println(s.show_excitement());
+		PythonBasics s = new PythonBasics();
+		System.out.println(s.show_excitement());
 	}
 }
