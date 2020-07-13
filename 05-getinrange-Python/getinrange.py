@@ -9,6 +9,9 @@ def fun_getinrange(x, bound1, bound2):
 	if(bound1>bound2):
 		lb = bound2
 		ub = bound1
+	else:
+		ub = bound2
+		lb = bound1
 	if(x>=lb and x<=ub):
 		return x
 	elif(x<lb):
