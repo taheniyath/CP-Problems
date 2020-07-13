@@ -10,6 +10,8 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	dist2 = (r1+r2)*(r1+r2)
 	if(dist1<dist2):
 		return True	
+	elif(dist1==dist2):
+		return False
 	else:
 		return False
 	 
