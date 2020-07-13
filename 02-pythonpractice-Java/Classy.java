@@ -19,5 +19,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Classy {
+    ArrayList <String> items = new ArrayList <String>();
+    public void addItem(String s){
+        items.add(s);
+    }
+    public int classiness(){
+        int k = 0;
+        String s ="";
+        switch(s){
+            case "tophat": 
+              k = k + 2;
+              break;
+            case "bowtie":
+              k = k + 4;
+              break;
+            case "monocle":
+              k = k + 5;
+            default:
+              k = k + 0;
+        }
+        return k;
+    }
+
 
 }
+
