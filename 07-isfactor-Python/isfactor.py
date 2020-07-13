@@ -12,5 +12,7 @@ def fun_isfactor(f, n):
 		return True
 	elif(f%n == 0):
 		return True
+	elif(f == 0):
+		return False
 	else:
 		return False # replace with your solution
