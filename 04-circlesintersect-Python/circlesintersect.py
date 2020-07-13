@@ -6,12 +6,13 @@
 
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
-	dist1 = (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)
-	dist2 = (r1+r2)*(r1+r2)
-	if(dist1<dist2):
-		return True	
-	elif(dist1==dist2):
+	dist1 = math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))
+	# dist2 = (r1+r2)*(r1+r2)
+	if(dist1<r1-r2):
+		return False	
+	elif(dist1<r2-r1):
 		return False
-	else:
-		return False
-	 
+	elif(dist1>r1+r2):
+		return True
+	# else:
+	# 	return False	 
