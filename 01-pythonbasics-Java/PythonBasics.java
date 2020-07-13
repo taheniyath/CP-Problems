@@ -9,8 +9,9 @@
 
 
 public class PythonBasics {
-	String s;
+	
     public String show_excitement() {
+		String s= "";
 		// your code goes here
 		for(int i=0; i<5; i++){
 			 s = s + "I am super excited for this course! ";
@@ -18,7 +19,7 @@ public class PythonBasics {
 		return s;
 	}
 	public static void main(String[] args) {
-		PythonBasics s = new PythonBasics();
-		System.out.println(s.show_excitement());
+		// PythonBasics s = new PythonBasics();
+		// System.out.println(s.show_excitement());
 	}
 }
