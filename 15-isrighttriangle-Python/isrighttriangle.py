@@ -10,7 +10,7 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
 	x = math.sqrt((x2-x1)**(2) +(y2-y1)**(2))
 	y = math.sqrt((x3-x2)**(2) +(y3-y2)**(2))
-	z = math.sqrt((x1-y3)**(2) +(y1-y3)**(2))
+	z = math.sqrt((x1-x3)**(2) +(y1-y3)**(2))
 	x1 = x**(2)
 	y1 = y**(2)
 	z1 = z**(2)
