@@ -15,7 +15,7 @@ def dicetoorderedhand(a, b, c):
 	# your code goes here
 	s = a+b+c
 	if(a==b==c):
-		return (a,b,c)
+		return int(str(a)+str(b)+str(c))
 	else:
 		k1 = (max(a,b,c))
 		k3 = (min(a,b,c))
