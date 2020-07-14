@@ -8,13 +8,13 @@ def getkthDigit(hand, n):
 	num = abs(hand)
 	res1 = num%10**(n+1)
 	res2 = num%10**(n)
-	dig = (res2-res1)/10**(n)
+	dig = (res2-res1)/(10**n)
 	return dig
 def handtodice(hand):
 	# your code goes here
-	k1 = getkthDigit(hand,0)
+	k1 = getkthDigit(hand,2)
 	k2 = getkthDigit(hand,1)
-	k3 = getkthDigit(hand,2)
+	k3 = getkthDigit(hand,0)
 	m = (k1,k2,k3)
 	return m
 	# pass
