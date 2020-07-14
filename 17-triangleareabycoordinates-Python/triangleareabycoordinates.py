@@ -6,7 +6,7 @@ import math
 # the triangleArea function you just wrote above.
 def triangleArea(s1,s2,s3):
 	x = (s1+s2+s3)/2
-	area = math.sqrt(x*(x-s1)*(X-s2)*(x-s3))
+	area = math.sqrt(x*(x-s1)*(x-s2)*(x-s3))
 	return area
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	# your code goes here
