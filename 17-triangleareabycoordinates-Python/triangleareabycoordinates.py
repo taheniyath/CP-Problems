@@ -1,3 +1,4 @@
+import math
 # triangleareabycoordinates(x1, y1, x2, y2, x3, y3)[5pts]
 # Write the function triangleareabycoordinates(x1, y1, x2, y2, x3, y3) that takes 6 int or float
 # values that represent the three points (x1,y1), (x2,y2), and (x3,y3), and returns as a float the
@@ -14,4 +15,4 @@ def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	z = math.sqrt((x1-x3)**(2) + (y1-y3)**(2))
 	res = triangleArea(x,y,z)
 	return res
-	pass
+	# pass
