@@ -12,10 +12,10 @@ def getkthDigit(x, n):
 	return dig
 def handtodice(hand):
 	# your code goes here
-	num = abs(hand)
-	k1 = getkthDigit(num,2)
-	k2 = getkthDigit(num,1)
-	k3 = getkthDigit(num,0)
+	# num = abs(hand)
+	k1 = getkthDigit(hand,2)
+	k2 = getkthDigit(hand,1)
+	k3 = getkthDigit(hand,0)
 	m = (k1,k2,k3)
 	return m
 	# pass
