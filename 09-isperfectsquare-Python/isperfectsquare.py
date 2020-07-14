@@ -5,4 +5,9 @@
 
 def isperfectsquare(n):
 	# your code goes here
-	pass
+	if(type(n) != str and temp >0):
+		root = math.sqrt(temp)
+		if int(root + 0.5)**2 == temp:
+			return True
+	return False
+	# pass
