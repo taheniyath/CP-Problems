@@ -8,7 +8,7 @@
 
 
 def fun_nearestbusstop(street):
-	s = (street%8)
+	s = (street%8)/5.0
 	k = int(street/8) + int(s)
 	stop = k*8
 	return stop
