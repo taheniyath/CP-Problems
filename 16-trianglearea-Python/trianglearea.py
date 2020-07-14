@@ -10,4 +10,3 @@ def trianglearea(s1, s2, s3):
 	x = (s1+s2+s3)/2
 	area = math.sqrt(x*(x-s1)*(x-s2)*(x-s3))
 	return area
-	# pass
