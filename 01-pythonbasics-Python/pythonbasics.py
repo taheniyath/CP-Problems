@@ -8,4 +8,7 @@
 
 def show_excitement():
     # Your code goes here!
+    for i in range (1-5):
+        s = s+ "I am super excited for this course! "
+    return s
     pass
