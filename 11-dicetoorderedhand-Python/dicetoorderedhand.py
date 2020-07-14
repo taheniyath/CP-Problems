@@ -15,10 +15,10 @@ def dicetoorderedhand(a, b, c):
 	# your code goes here
 	s = a+b+c
 	if(a==b==c):
-		return (a,b,c)
+		return abc
 	else:
 		k1 = max(a,b,c)
 		k3 = min(a,b,c)
 		k2 = s-k1+k3
-		return(k1,k2,k3)
+		return k1k2k3
 	# pass
