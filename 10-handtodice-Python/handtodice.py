@@ -5,9 +5,9 @@
 # assert(handToDice(422) == (4,2,2))
 # Hint: You might find // and % useful here, and also getKthDigit().
 def getkthDigit(x, n):
-	num = abs(x)
-	res1 = num%10**(n+1)
-	res2 = num%10**(n)
+	# num = abs(x)
+	res1 = x%10**(n+1)
+	res2 = x%10**(n)
 	dig = (res2-res1)/(10**n)
 	return dig
 def handtodice(hand):
