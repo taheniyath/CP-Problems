@@ -13,9 +13,9 @@ def getkthDigit(x, n):
 def handtodice(hand):
 	# your code goes here
 	# num = abs(hand)
-	k1 = getkthDigit(hand,2)
-	k2 = getkthDigit(hand,1)
-	k3 = getkthDigit(hand,0)
-	m = float(k1,k2,k3)
+	k1 = float(getkthDigit(hand,2))
+	k2 = float(getkthDigit(hand,1))
+	k3 = float(getkthDigit(hand,0))
+	m = (k1,k2,k3)
 	return m
 	# pass
