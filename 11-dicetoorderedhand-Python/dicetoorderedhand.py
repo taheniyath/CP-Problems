@@ -20,5 +20,7 @@ def dicetoorderedhand(a, b, c):
 		k1 = (max(a,b,c))
 		k3 = (min(a,b,c))
 		k2 = s-(k1+k3)
-		return (k1, k2, k3)
+		res = (str(k1)+str(k2)+str(k3))
+		return int(res)
+		
 	# pass
