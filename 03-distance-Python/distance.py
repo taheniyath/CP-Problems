@@ -8,4 +8,4 @@ import math
 def fun_distance(x1, y1, x2, y2):
 	# your code goes here
 	dist = math.sqrt ((y2-y1)*(y2-y1) + (x2-x1)*(x2-x1))
-	return dist
+	return int(dist)
