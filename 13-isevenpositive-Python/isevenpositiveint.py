@@ -6,7 +6,9 @@
 
 def isevenpositiveint(x):
 	# your code goes here
-	if(x>1 and x%2 == 0):
+	if (x=="yikes!"):
+		return False
+	elif(type(x)==int and x>1 and x%2 == 0):
 		return True
 	else:
 		return False
