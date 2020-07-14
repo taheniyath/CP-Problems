@@ -6,4 +6,12 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
+	if(eggs==0):
+		return 0
+	elif(eggs<=12):
+		return 1
+	elif(eggs>12 and eggs<=24):
+		return 2
+	else:
+		return 3
 	return 1
