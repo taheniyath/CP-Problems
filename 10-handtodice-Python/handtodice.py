@@ -6,9 +6,9 @@
 # Hint: You might find // and % useful here, and also getKthDigit().
 def getkthDigit(hand, n):
 	num = abs(hand)
-	res1 = num%10^(n+1)
-	res2 = num%10^(n)
-	dig = (res2-res1)/10^(n)
+	res1 = num%10**(n+1)
+	res2 = num%10**(n)
+	dig = (res2-res1)/10**(n)
 	return dig
 def handtodice(hand):
 	# your code goes here
