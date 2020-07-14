@@ -16,6 +16,6 @@ def handtodice(hand):
 	k1 = getkthDigit(hand,2)
 	k2 = getkthDigit(hand,1)
 	k3 = getkthDigit(hand,0)
-	m = (k1,k2,k3)
+	m = float(k1,k2,k3)
 	return m
 	# pass
