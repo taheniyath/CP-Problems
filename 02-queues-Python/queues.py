@@ -17,7 +17,7 @@ class Queue:
         # pass 
 
     def dequeue(self):
-        # if len(self.storage)>0:
-        return self.storage.pop()
+        if len(self.storage)>0:
+            return self.storage.pop()
         # return ("no element")
         # pass
