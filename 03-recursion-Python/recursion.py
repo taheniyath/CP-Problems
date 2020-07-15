@@ -4,4 +4,8 @@ Your code should have the same input/output as the
 iterative code in the instructions."""
 
 def get_fib(position):
-    return -1
+    if(n<=1):
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+    # return -1
