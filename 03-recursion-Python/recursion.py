@@ -8,5 +8,5 @@ def get_fib(position):
     if(n<=1):
         return n
     else:
-        return(recur_fibo(n-1) + recur_fibo(n-2))
+        return(get_fib(n-1) + get_fib(n-2))
     # return -1
