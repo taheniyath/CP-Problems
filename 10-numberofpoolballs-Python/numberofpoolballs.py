@@ -9,6 +9,6 @@
 
 def numberofpoolballs(rows):
 	# Your code goes here
-	
-	return (rows)(rows+1)/2 
+	res = (1+rows)(rows/2)
+	return res
 	# pass
