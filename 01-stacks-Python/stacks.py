@@ -52,12 +52,12 @@ class stack(object):
 
     def push(self, new_element):
         "Push (add) a new element onto the top of the stack"
-        if self.top == None:
-            self.top = Element(new_element)
+        if self.ll == None:
+            self.ll = Element(new_element)
         else:
             temp = Element(new_element)
-            temp.next = self.top
-            self.top = temp
+            temp.next = self.ll
+            self.ll = temp
         # pass
 
     def pop(self):
