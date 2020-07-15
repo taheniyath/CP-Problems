@@ -66,8 +66,8 @@ class stack(object):
             return None
         else:
             temp1 = self.ll
-            self.ll = self.ll.self.next
-            self.ll.self.next = None
-            return temp1.self.value
+            self.ll = self.ll.next
+            self.ll.next = None
+            return temp1.value
         pass
     
