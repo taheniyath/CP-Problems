@@ -13,11 +13,11 @@ class Queue:
         # pass
 
     def peek(self):
-        return self.storage[-1]
+        return self.storage[0]
         # pass 
 
     def dequeue(self):
         if len(self.storage)>0:
-            return self.storage.pop()
+            return self.storage.pop(0)
         # return ("no element")
         # pass
