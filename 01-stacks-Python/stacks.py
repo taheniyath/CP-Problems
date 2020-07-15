@@ -30,7 +30,7 @@ class LinkedList(object):
             return Element(new_element)
         temp = Element(new_element)
         temp.next = self.head
-        head = temp
+        self.head = temp
         # return head
         # pass
 
@@ -39,10 +39,10 @@ class LinkedList(object):
         if self.head == None:
             return None
         if self.head.next == None:
-            head = None
+            self.head = None
             return None
         temp1 = self.head.value
-        self.head.next = head
+        self.head.next = self.head
         return temp1
         # pass
 
