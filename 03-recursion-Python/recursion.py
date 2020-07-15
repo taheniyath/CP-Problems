@@ -4,6 +4,7 @@ Your code should have the same input/output as the
 iterative code in the instructions."""
 
 def get_fib(position):
+    n = position
     if(n<=1):
         return n
     else:
