@@ -65,9 +65,6 @@ class stack(object):
         if self.ll == None:
             return None
         else:
-            temp1 = self.ll
-            self.ll = self.ll.next
-            self.ll.next = None
-            return temp1.value
+            return self.ll.delete_first()
         pass
     
