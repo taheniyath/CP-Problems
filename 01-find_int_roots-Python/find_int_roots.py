@@ -13,6 +13,8 @@ def fun_find_int_roots(a, b, c):
 	if(d>0):
 		r1 = (-b+d1)/2*a
 		r2 = (-b-d1)/2*a
-		return int(r2, r1)
+		x = round(r2)
+		y = round(r1)
+		return 
 
 
