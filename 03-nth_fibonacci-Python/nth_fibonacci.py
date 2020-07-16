@@ -12,8 +12,11 @@ def fun_nthfibonaccinumber(n):
 	k = 0
 	if(n==0):
 		return 1
-	if(n>=1):
-		for i in range(n):
-			k = k+((i-1) + (i-2))
-		return k
+	elif(n==1):
+		return 1
+	elif(n==2):
+		return 2
+	else:
+		# for i in range( 3, n):	
+		return fun_nthfibonaccinumber(n-1)+fun_nthfibonaccinumber(n-2)
 	return 0
