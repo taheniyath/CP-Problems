@@ -15,6 +15,6 @@ def fun_find_int_roots(a, b, c):
 		r2 = (-b-d1)/2*a
 		x = round(r2)
 		y = round(r1)
-		return 
+		return x, y
 
 
