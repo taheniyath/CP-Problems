@@ -29,7 +29,7 @@ def ishappynumber(n):
 		res1 = squaresum(res1)
 
 		res2 = squaresum(squaresum(res2))
-		if(slow!=1):
+		if(res1!=res2):
 			continue
 		else:
 			break
