@@ -2,7 +2,7 @@
 # Write the function mostFrequentDigit(n), that takes a non-negative integer n and returns the digit from 0 to 9 
 # that occurs most frequently in it, with ties going to the smaller digit.
 
-def occurences(x,i):
+def occurrences(x,i):
 	count = 0
 	while (x):
 		if(x%10 == 10):
@@ -20,4 +20,4 @@ def mostfrequentdigit(n):
 			max = count
 			result = i
 	return result
-	pass
+	# pass
