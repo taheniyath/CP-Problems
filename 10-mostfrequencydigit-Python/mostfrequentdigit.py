@@ -12,12 +12,15 @@ def occurrences(n,i):
 
 def mostfrequentdigit(n):
 	# your code goes here
+	s = str(n)
+	if(len(s)==1):
+		return n
 	max = 1
 	result =0
-	s = str(n)
+	
 	for i in range(len(s)):
 		count = occurrences(n, i)
-		if(count > max):
+		if(count >= max):
 			max = count
 			result = i
 	return result
