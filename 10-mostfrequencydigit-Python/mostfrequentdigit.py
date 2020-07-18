@@ -5,7 +5,7 @@
 def occurrences(n,i):
 	count = 0
 	while (n):
-		if(n%10 == 10):
+		if(n%10 == i):
 			count += 1
 		n = int(n/10)
 	return count
