@@ -33,7 +33,7 @@ def ishappynumber(n):
 			continue
 		else:
 			break
-	return True
+	return (res1 ==1)
 
     # return False
 
