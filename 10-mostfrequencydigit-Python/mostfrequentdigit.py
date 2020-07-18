@@ -23,5 +23,7 @@ def mostfrequentdigit(n):
 		if(count > max):
 			max = count
 			result = i
+		# elif(count==max ):
+
 	return result
 	# pass
