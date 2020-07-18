@@ -8,7 +8,7 @@ def hasconsecutivedigits(n):
 	k = len(s)
 	if (k == 1):
 		return False
-	for i in range(k):
+	for i in range(k-1):
 		if(s[i] == s[i+1]):
 			return True
 	return False
