@@ -20,7 +20,7 @@ def mostfrequentdigit(n):
 	
 	for i in range(15):
 		count = occurrences(n, i)
-		if(count >= max):
+		if(count > max):
 			max = count
 			result = i
 	return result
