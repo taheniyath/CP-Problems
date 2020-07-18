@@ -6,8 +6,10 @@ def hasconsecutivedigits(n):
 	# your code goes here
 	s = str(n)
 	k = len(s)
+	if (k == 1):
+		return False
 	for i in range(k):
 		if(s[i] == s[i+1]):
 			return True
-		return False
-	pass
+	return False
+	# pass
