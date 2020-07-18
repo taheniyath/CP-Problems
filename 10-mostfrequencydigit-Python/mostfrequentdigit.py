@@ -15,7 +15,7 @@ def mostfrequentdigit(n):
 	max = 1
 	result =0
 	s = str(n)
-	for i in range(10):
+	for i in range(len(s)):
 		count = occurrences(n, i)
 		if(count >= max):
 			max = count
