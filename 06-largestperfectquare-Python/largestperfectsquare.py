@@ -9,4 +9,10 @@
 
 def largestperfectsquare(n):
 	# your code goes here
+	x = 0
+	for i in range(n):
+		root = math.sqrt(i)
+		if int(root +0.5)**2 == i:
+			x = i
+	return x
 	pass
