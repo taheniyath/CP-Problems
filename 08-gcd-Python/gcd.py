@@ -10,4 +10,10 @@
 
 def gcd(m, n):
 	# your code goes here
+	x = n
+	y = m%n
+	if(y != 0):
+		return gcd(x,y)
+	else:
+		return y
 	pass
