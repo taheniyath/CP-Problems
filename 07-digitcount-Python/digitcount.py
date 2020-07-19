@@ -8,5 +8,5 @@ import math
 def digitcount(n):
 	# your code goes here
 	x = abs(n)
-	return math.floor(math.log(n,10)+1)
-	pass
+	return math.floor(math.log(x,10)+1)
+	# pass
