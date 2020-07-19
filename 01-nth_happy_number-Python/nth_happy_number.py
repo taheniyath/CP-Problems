@@ -33,9 +33,9 @@ def ishappynumber(n):
 
 def fun_nth_happy_number(n):
 	count = 0
-	for i in range(1, 50):
+	for i in range(50):
 		if(ishappynumber(i)):
 			count += 1
 			if (count == n):
 				break
-	return i
+		return i
