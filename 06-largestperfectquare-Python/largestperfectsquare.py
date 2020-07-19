@@ -10,9 +10,9 @@ import math
 def largestperfectsquare(n):
 	# your code goes here
 	x = 0
-	for i in range(n):
+	for i in range(n+1):
 		root = math.sqrt(i)
 		if int(root +0.5)**2 == i:
 			x = i
 	return x
-	pass
+	# pass
