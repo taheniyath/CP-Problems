@@ -6,4 +6,14 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	pass
+	x = len(str1)
+	y = len(str2)
+	if (x != y):
+		return 0
+	temp = str1 + str2
+	if str2 in temp:
+		return True
+	else:
+		return False
+
+	# pass
