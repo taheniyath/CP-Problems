@@ -3,6 +3,8 @@
 # if given String is "JavaPython" then the output should be "JavPython".
 # The second or further occurrence of duplicate should be removed.
 
+from collections import OrderedDict
 def removeduplicate(text):
 	# Your code goes here
+	return "".join(OrderedDict.fromkeys(text))
 	pass
