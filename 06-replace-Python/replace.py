@@ -9,9 +9,9 @@ def fun_replace(s1, s2, s3):
 	i = 0
 	l = len(s2)
 	while i != len(s1):
-		if s1[i:i+l2]==s2:
+		if s1[i:i+l]==s2:
 			strng += s3
-			i = i+l2
+			i = i+l
 		else:
 			strng += s1[i]
 			i = i+1
