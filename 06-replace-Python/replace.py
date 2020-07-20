@@ -5,5 +5,14 @@
 
 
 def fun_replace(s1, s2, s3):
-	return s1
+	strng = ''
+	i = 0
+	while i != len(s1):
+		if s1[i:i+l2]==s2:
+			strng += s3
+			i = i+l2
+		else:
+			strng += s1[i]
+			i = i+1
+	return strng
 
