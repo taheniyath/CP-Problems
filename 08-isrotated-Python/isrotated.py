@@ -11,7 +11,7 @@ def isrotated(str1, str2):
 	if (x != y):
 		return 0
 	temp = str1 + str2
-	if (temp.count(str2)>0):
+	if str2 in temp:
 		return True
 	else:
 		return False
