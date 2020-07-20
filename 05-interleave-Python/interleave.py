@@ -6,13 +6,9 @@
 # the string "ac#D!f2". Assume that both s1 and s2 will always be strings.
 
 
-
+from itertools import zip_longest
 def fun_interleave(s1,s2):
-	# res = "".join(i +j for i,j in zip(s1,s2))
-	# res1 = str(res)
-	res = [''] * len(s1) * 2
-	res[::2] = s1
-	res[1::2] = s2
-	k = (''.join(res))
+	res = "".join(i +j for i,j in zip_longest(s1,s2, fillvalue=''))
+	res1 = str(res)
 	return k
 	
