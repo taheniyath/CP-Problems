@@ -7,4 +7,4 @@ from collections import OrderedDict
 def removeduplicate(text):
 	# Your code goes here
 	return "".join(OrderedDict.fromkeys(text))
-	pass
+	# pass
