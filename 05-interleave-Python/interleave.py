@@ -10,5 +10,5 @@ from itertools import zip_longest
 def fun_interleave(s1,s2):
 	res = "".join(i +j for i,j in zip_longest(s1,s2, fillvalue=''))
 	res1 = str(res)
-	return k
+	return res1
 	
