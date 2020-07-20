@@ -11,9 +11,12 @@ def isrotated(str1, str2):
 	if (x != y):
 		return 0
 	temp = str1 + str2
-	if str2 in temp:
+	i = 0
+	if temp[i:i+y] == str2:
+
 		return True
 	else:
+		i = i+1
 		return False
 
 	# pass
