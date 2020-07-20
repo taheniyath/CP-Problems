@@ -7,6 +7,7 @@
 def fun_replace(s1, s2, s3):
 	strng = ''
 	i = 0
+	l = len(s2)
 	while i != len(s1):
 		if s1[i:i+l2]==s2:
 			strng += s3
