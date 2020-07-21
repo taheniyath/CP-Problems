@@ -18,11 +18,11 @@
 def matrixadd(L, M):
 	# Your code goes here
 	list1 = []
-	if(len(L[0]) != len(M[0])):
-		return None
-	if(len(L) != len(M)):
+	if(len(L) != len(M) or len(L[0]) != len(M[0])):
 		return None
 	for i in range(len(L)):
+		if i>0 and len(L[i]) != len(M[i]):
+			return None
 		res = []
 		for j in range (len(L[0])):
 			res.append(L[i][j] + M[i][j])
