@@ -7,10 +7,10 @@
 
 def issorted(a):
 	# your code goes here
-	list = a
+	# list = a
 	if(len(a)  == 0 or len(a) == 1):
 		return True
-	if(list.sorted() == a):
+	if(sorted(a) == a):
 		return True
 	else:
 		return False
