@@ -7,4 +7,9 @@
 
 def issorted(a):
 	# your code goes here
+	list = a
+	if(sort(list) == a):
+		return True
+	else:
+		return False
 	pass
