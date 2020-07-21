@@ -8,7 +8,9 @@
 def issorted(a):
 	# your code goes here
 	list = a
-	if(sort(list) == a):
+	if(len(a)  == 0 or len(a) == 1):
+		return True
+	if(list.sorted() == a):
 		return True
 	else:
 		return False
