@@ -23,7 +23,7 @@ def ispalindrome(n):
 		return False
 def fun_nth_palindromic_prime(n):
 	my_List = []
-	for i in range(10000000):
+	for i in range(100000):
 		if(isprime(i)):
 			if(ispalindrome(i)):
 				my_List.append(i)
