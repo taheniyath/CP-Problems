@@ -24,6 +24,5 @@ def matrixadd(L, M):
 			res.append(L[i][j] + M[i][j])
 		list1.append(res)
 
-	for r in list1:
-		print(r)
+	return list1
 	# pass
