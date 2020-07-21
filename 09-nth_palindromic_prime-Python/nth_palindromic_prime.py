@@ -6,8 +6,10 @@
 
 
 def isprime(n):
-	if(n>1):
-		for i in range(2,n):
+	if(n == 2):
+		return True
+	elif(n>1):
+		for i in range(3,n):
 			if((n%i) == 0):
 				return False
 			else:
@@ -24,7 +26,7 @@ def ispalindrome(n):
 def fun_nth_palindromic_prime(n):
 	my_List = []
 	for i in range(100000):
-		if(isprime(i)):
-			if(ispalindrome(i)):
+		if(ispalindrome(i)):
+			if(isprime(i)):
 				my_List.append(i)
 	return my_List[n]
