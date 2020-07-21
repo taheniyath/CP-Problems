@@ -19,9 +19,10 @@ def fun_nth_additive_prime(n):
 	for i in range(200):
 		if(isprime(i)):
 			sum = 0
-			for d in str(i):
-				sum += int(d)
-				if(isprime(sum)):
-					my_List.append(i)
+			s = str(i)
+			for digit in s:
+				sum += int(digit)
+			if(isprime(sum)):
+				my_List.append(i)
 	return my_List[n]
 	# return 1
