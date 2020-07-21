@@ -23,8 +23,13 @@ def ishappynumber(n):
 	return (res1 == 1)
 
 def isprime(n):
-	if(n<=1):
-		return False
+	if(n>1):
+		for i in range(2,n):
+			if((n % i) == 0):
+				return True
+			else:
+				return False
+
 
 def fun_nth_happy_prime(n):
 	my_List = []
