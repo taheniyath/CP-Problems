@@ -15,7 +15,7 @@ def isrotation(x, y):
 		return True
 	if (l1 != l2):
 		return 0
-	temp = x1 + y1
+	temp = x1 + x1
 	if y1 in temp:
 		return True
 	else:
