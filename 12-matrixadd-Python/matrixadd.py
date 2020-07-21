@@ -1,4 +1,4 @@
-# matrixAdd(L, M)[10 pts]
+ # matrixAdd(L, M)[10 pts]
 # Background: we can think of a 2d list in Python as a matrix in math. To add two matrices, L and M, they must have 
 # the same dimensions. 
 # Then, we loop over each row and col, and the result[row][col] is just the sum of L[row][col] and M[row][col]. For example:
@@ -17,4 +17,9 @@
 
 def matrixadd(L, M):
 	# Your code goes here
+	res = [ [0,0,0], [0,0,0], [0,0,0]]
+	for i in range(len(L)):
+		for j in range (L(0)):
+			res[i] [j] = L[i][j] + M[i][j]
+	return res
 	pass
