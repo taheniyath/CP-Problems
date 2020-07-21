@@ -5,6 +5,26 @@
 
 
 
+def isprime(n):
+	if(n>1):
+		for i in range(2,n):
+			if((n%i) == 0):
+				return False
+			else:
+				return True
 
+
+def ispalindrome(n):
+	x = str(n)
+	s = x[: : -1]
+	if(s == x):
+		return True
+	else:
+		return False
 def fun_nth_palindromic_prime(n):
-	return 0
+	my_List = []
+	for i in range(10000000):
+		if(isprime(i)):
+			if(ispalindrome(i)):
+				my_List.append(i)
+	return my_List[n]
