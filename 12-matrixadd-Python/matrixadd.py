@@ -22,7 +22,7 @@ def matrixadd(L, M):
 		res = []
 		for j in range (len(L[0])):
 			res[i][j] = L[i][j] + M[i][j]
-			list.append(res)
+		list.append(res)
 
 	for r in res:
 		print(r)
