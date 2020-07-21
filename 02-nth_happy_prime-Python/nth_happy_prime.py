@@ -30,11 +30,10 @@ def isprime(n):
 			else:
 				return False
 
-
 def fun_nth_happy_prime(n):
 	my_List = []
-	for i in range(100):
-		if(isprime(i) and ishappynumber(i)):
+	for i in range(50):
+		if(isprime(i) == True and ishappynumber(i) == True):
 			my_List.append(i)
 
 	return my_List[n]
