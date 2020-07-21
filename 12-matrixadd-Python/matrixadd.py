@@ -19,7 +19,7 @@ def matrixadd(L, M):
 	# Your code goes here
 	res = [ [0,0,0], [0,0,0], [0,0,0]]
 	for i in range(len(L)):
-		for j in range (L(1)):
+		for j in range (L(0)):
 			res[i] [j] = L[i][j] + M[i][j]
 	for r in res:
 		return r
