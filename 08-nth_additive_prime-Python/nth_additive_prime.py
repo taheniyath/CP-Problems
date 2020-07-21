@@ -5,6 +5,23 @@
 
 
 
+def isprime(n):
+	if(n == 2):
+		return True
+	elif(n>1):
+		for i in range(2,n):
+			if(n%i == 0):
+				return False
+		return True
 
 def fun_nth_additive_prime(n):
-	return 1
+	my_List = []
+	for i in range(100):
+		if(isprime(i)):
+			sum = 0
+			for d in str(n):
+				sum += int(d)
+				if(isprime(sum)):
+					my_List.append()
+	return my_List[n]
+	# return 1
