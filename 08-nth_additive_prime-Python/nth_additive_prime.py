@@ -16,12 +16,12 @@ def isprime(n):
 
 def fun_nth_additive_prime(n):
 	my_List = []
-	for i in range(100):
+	for i in range(200):
 		if(isprime(i)):
 			sum = 0
-			for d in str(n):
+			for d in str(i):
 				sum += int(d)
 				if(isprime(sum)):
-					my_List.append()
+					my_List.append(i)
 	return my_List[n]
 	# return 1
