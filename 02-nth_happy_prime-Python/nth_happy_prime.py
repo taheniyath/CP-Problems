@@ -26,14 +26,14 @@ def isprime(n):
 	if(n>1):
 		for i in range(2,n):
 			if((n % i) == 0):
-				return True
-			else:
 				return False
+			else:
+				return True
 
 def fun_nth_happy_prime(n):
 	my_List = []
 	for i in range(50):
-		if(isprime(i) == True and ishappynumber(i) == True):
-			my_List.append(i)
-
+		if(ishappynumber(i)):
+			if(isprime(i)):
+				my_List.append(i)
 	return my_List[n]
