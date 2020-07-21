@@ -12,5 +12,15 @@
 
 
 def fun_isfactorish(n):
+	x = str(n)
+	if(len(x) > 3 or len(x) <3):
+		return False
+	for d in x:
+		if(d == 0):
+			return False
+		elif(int(d)%n == 0):
+			continue
+		else:
+			return True
 	return False
 
