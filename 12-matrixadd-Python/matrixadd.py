@@ -20,7 +20,7 @@ def matrixadd(L, M):
 	list1 = []
 	if(len(L[0]) != len(M[0])):
 		return None
-	elif(len(L) != len(M)):
+	if(len(L) != len(M)):
 		return None
 	for i in range(len(L)):
 		res = []
