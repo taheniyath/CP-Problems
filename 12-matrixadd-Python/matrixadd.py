@@ -20,13 +20,14 @@ def matrixadd(L, M):
 	list1 = []
 	if(len(L) != len(M) or len(L[0]) != len(M[0])):
 		return None
-	for i in range(len(L)):
-		if i>0 and len(L[i]) != len(M[i]):
-			return None
-		res = []
-		for j in range (len(L[0])):
-			res.append(L[i][j] + M[i][j])
-		list1.append(res)
+	else:
+		for i in range(len(L)):
+			if i>0 and len(L[i]) != len(M[i]):
+				return None
+			res = []
+			for j in range (len(L[0])):
+				res.append(L[i][j] + M[i][j])
+			list1.append(res)
 
-	return list1
+		return list1
 	# pass
