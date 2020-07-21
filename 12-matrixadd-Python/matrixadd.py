@@ -17,13 +17,13 @@
 
 def matrixadd(L, M):
 	# Your code goes here
-	list = []
+	list1 = []
 	for i in range(len(L)):
 		res = []
 		for j in range (len(L[0])):
-			res.append( L[i][j] + M[i][j])
-	list.append(res)
+			res.append(L[i][j] + M[i][j])
+		list1.append(res)
 
-	for r in list:
+	for r in list1:
 		print(r)
 	# pass
