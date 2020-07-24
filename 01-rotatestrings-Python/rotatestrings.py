@@ -9,7 +9,7 @@
 def fun_rotatestrings(s, n):
 	if(n>=0):
 		firstl = s[0 : n]
-		secondl = s[d : ]
+		secondl = s[n : ]
 		res = (firstl + secondl)
 
 	return s
