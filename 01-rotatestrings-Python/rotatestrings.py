@@ -12,6 +12,8 @@ def fun_rotatestrings(s, n):
 
 	elif(n>0):
 		return s[n:] + s[:n]
+	elif(n<0):
+		return s[-n:] + s[:-n]
 	elif(n>0):
 		firstl = s[0 : n]
 		secondl = s[n : ]
