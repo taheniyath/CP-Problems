@@ -7,7 +7,7 @@
 
 def fun_alternatingsum(a): 
 	for i in range (0, len(a)):
-		if i%2==0:
+		if i%2!=0:
 			a[i]=a[i]*(-1)
 	return sum(a)
 
