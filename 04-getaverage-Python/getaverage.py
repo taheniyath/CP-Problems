@@ -10,5 +10,6 @@
 
 
 def fun_getaverage(s): 
+	list1 = s.split(',')
 	return 0.0
 
