@@ -10,9 +10,9 @@
 
 
 def fun_getaverage(s): 
-	list1 = s.split(',')
+	s = s.split(',')
 	list2 = []
-	[i for i in list1 if not i.isalpha()]
+	[i for i in s if not i.isalpha()]
 		# if(i.isalpha()):
 	x = int(i)
 	list2.append(x)
