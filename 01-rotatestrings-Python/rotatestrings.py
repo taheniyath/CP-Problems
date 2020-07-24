@@ -14,17 +14,17 @@ def fun_rotatestrings(s, n):
 		return s[n:] + s[:n]
 	elif(n<0):
 		return s[-n:] + s[:-n]
-	elif(n>0):
-		firstl = s[0 : n]
-		secondl = s[n : ]
-		res = (secondl + firstl)
-		return res
-	elif(n<0):
-		x = len(s) 
-		firstr = s[0 : x-n]
-		secondr = s[x-n: ]
-		res = (secondr + firstr)
-		return res
+	# elif(n>0):
+	# 	firstl = s[0 : n]
+	# 	secondl = s[n : ]
+	# 	res = (secondl + firstl)
+	# 	return res
+	# elif(n<0):
+	# 	x = len(s) 
+	# 	firstr = s[0 : x-n]
+	# 	secondr = s[x-n: ]
+	# 	res = (secondr + firstr)
+	# 	return res
 
-	return s
+	# return s
 
