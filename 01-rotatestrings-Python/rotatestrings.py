@@ -11,6 +11,7 @@ def fun_rotatestrings(s, n):
 		firstl = s[0 : n]
 		secondl = s[n : ]
 		res = (firstl + secondl)
+		return res
 
 	return s
 
