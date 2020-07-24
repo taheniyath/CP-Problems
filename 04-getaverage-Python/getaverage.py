@@ -16,5 +16,7 @@ def fun_getaverage(s):
 		if(list1.isalpha()):
 			list2.append(int(i))
 
+	res = sum(list2)/len(list2)
+
 	return 0.0
 
