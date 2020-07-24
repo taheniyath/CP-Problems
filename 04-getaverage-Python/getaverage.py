@@ -13,10 +13,11 @@ def fun_getaverage(s):
 	list1 = s.split(',')
 	list2 = []
 	for i in list1:
-		if(list1.isalpha()):
-			list2.append(int(i))
+		if(i.isalpha()):
+			x = int(i)
+			list2.append(x)
 
 	res = sum(list2)/len(list2)
 
-	return 0.0
+	return float(res)
 
