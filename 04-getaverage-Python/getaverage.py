@@ -12,12 +12,14 @@
 def fun_getaverage(s): 
 	s = s.split(',')
 	list2 = []
-	[i for i in s if not i.isalpha()]
-		# if(i.isalpha()):
-	x = int(i)
-	list2.append(x)
-
-	res = sum(list2)/len(list2)
-
-	return float(res)
+	for i in s:
+		try:
+			if float(i)>0:
+				list2.append(float(i))
+		except:
+			m = 0
+	if len(list2) == 0:
+		return 0.0
+	else:
+		return (sum(list2)/len(list2))
 
