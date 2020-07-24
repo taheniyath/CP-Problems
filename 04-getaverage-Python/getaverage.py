@@ -14,7 +14,7 @@ def fun_getaverage(s):
 	list2 = []
 	for i in s:
 		try:
-			if float(i)>0:
+			if float(i)>=0:
 				list2.append(float(i))
 		except:
 			m = 0
