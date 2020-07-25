@@ -13,17 +13,22 @@ def shortenlongruns(L, k):
 	# Your code goes here
 	x = len(L)
 	l = []
+	n = 0
 	for i in range(x):
 		if L[i] not in l:
+			l.append(L[i])
+			n=1
+		elif(L[i]!=L[i-1]):
 			l.append(L[i])
 			n=1
 		elif(L[i] == L[i-1]):
 			n = n+1
 			if n<k:
+				# continue
+			# else:
 				l.append(L[i])
-		elif(L[i]!=L[i-1]):
-			l.append(L[i])
-			n=1
+	return l
+		
 		
 
 
