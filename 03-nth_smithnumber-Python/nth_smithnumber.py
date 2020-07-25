@@ -8,17 +8,15 @@
 # so fun_nthsmithnumber(1) should return 22
 import math
 def isprime(n):
-    if(n>1):
         for i in range(2,n):
-            if((n%i) == 0):
+            if(n%1 == 0 and n%i == 0):
                 return False
-            else:
-                return True
+        return True
 def sumofdig(n):
     s = 0
     while n>0:
-        k = n%10
-        s = s + k
+        r = n%10
+        s = s + r
         n = n//10
     return s
 
