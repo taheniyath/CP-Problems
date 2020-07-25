@@ -10,9 +10,21 @@ def multipolynomials(p1, p2):
 	y = len(p2)
 	if(x>=y):
 		l1 = []
+		l2 = []
+		s = 0
 		for i in range(x):
-			k = p1[i]*p2[i]
-			l1.append(k)
-	return l1
+			for j in range(y):
+				k = p1[i]*p2[j]
+				l1.append(k)
+		for i in range(len(l1)):
+			if i!=1 and i!=2:
+				l2.append(l1[i])
+			else:
+				s=s+l1[i]
+				l2.append(s)
+		if len(l2)>=5:
+			return l2[0:1]+l2[2:3]+l2[4:]
+		elif len(l2)<=4:
+			return l2[0:1]+l2[2:]
 	# Your code goes here
 	# pass
