@@ -24,8 +24,6 @@ def shortenlongruns(L, k):
 		elif(L[i] == L[i-1]):
 			n = n+1
 			if n<k:
-				# continue
-			# else:
 				l.append(L[i])
 	return l
 		
@@ -33,4 +31,4 @@ def shortenlongruns(L, k):
 
 
 
-	pass
+	# pass
