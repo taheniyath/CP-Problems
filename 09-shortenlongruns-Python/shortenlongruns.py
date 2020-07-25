@@ -22,7 +22,7 @@ def shortenlongruns(L, k):
 			if n<k:
 				l.append(L[i])
 		elif(L[i]!=L[i-1]):
-			l.append(l[i])
+			l.append(L[i])
 			n=1
 		
 
