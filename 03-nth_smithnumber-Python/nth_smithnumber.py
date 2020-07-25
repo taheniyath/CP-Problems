@@ -35,11 +35,11 @@ def sumoffact(n):
         l.append(int(n))
     s = 0
     for i in l:
-        if len(str((i))) == 1:
+        if len(str(i)) == 1:
             s = s + i
-        elif len(str(i)) > 1 and 1 is not n:
+        elif len(str(i)) > 1 and i is not n:
             s = s + sumofdig(i)
-        return s
+    return s
 def issmith(n):
     if sumofdig(n) == sumoffact(n):
         return True
