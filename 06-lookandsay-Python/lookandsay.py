@@ -10,13 +10,13 @@
 def lookandsay(a):
 	# Your code goes here
 	x = len(a)
-	k = 0
-	r = []
-	n = a[0]
 	if (x == 0):
 		return []
 	else:
-		for i in range ( x):
+		k = 0
+		r = []
+		n = a[0]
+		for i in range ( len(a)):
 			if a[i]!=n:
 				l1 = len(a[k:i])
 				r = r+[(l1,n)]
