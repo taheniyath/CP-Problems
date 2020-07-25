@@ -9,4 +9,17 @@
 
 def lookandsay(a):
 	# Your code goes here
-	pass
+	x = len(a)
+	cout = 0
+	l1 = []
+	if (x == 0):
+		return []
+	else:
+		for i in range (0, x-1):
+			for j in range (i+1,x):
+				if (a[i] == a[j]):
+					cout = cout+1
+				
+			l1.extend((i,cout))
+		return l1
+	# pass
