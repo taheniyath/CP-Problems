@@ -26,5 +26,5 @@ def longestdigitrun(n):
 	for i in k:
 		dct1[i] = dct[i]
 		dct1 = sorted(dct1.items(), key = lambda item:item[1], reverse = True)
-	return dct[0][0]
+	return dct1[0][0]
 	# pass
