@@ -7,6 +7,14 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
-
+def isprime(n):
+    if(n>1):
+        for i in range(2,n):
+            if(n%i == 0):
+                return False
+            else:
+                return True
 def fun_nth_smithnumber(n):
+
+
     return 1
