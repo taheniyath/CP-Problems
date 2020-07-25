@@ -16,9 +16,7 @@ def inverselookandsay(a):
 		if a[i] == ():
 			return l1
 		else:
-			m = a[i[0]]
-			n = a[i[1]]
-			# (m,n) = a[i]
+			(m,n) = a[i]
 			for i in range(m):
 				l1.append(n)
 	return l1
