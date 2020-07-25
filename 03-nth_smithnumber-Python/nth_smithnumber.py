@@ -15,12 +15,12 @@ def isprime(n):
             else:
                 return True
 def sumofdig(n):
-    x = 0
+    s = 0
     while n>0:
         k = n%10
-        x = x + k
+        s = s + k
         n = n//10
-    return x
+    return s
 
 def sumoffact(n):
     l =[]
@@ -37,7 +37,7 @@ def sumoffact(n):
     for i in l:
         if len(str((i))) == 1:
             s = s + i
-        elif len(str(i) > 1 and 1 is not n):
+        elif len(str(i)) > 1 and 1 is not n:
             s = s + sumofdig(i)
         return s
 def issmith(n):
@@ -48,7 +48,7 @@ def issmith(n):
 
 def fun_nth_smithnumber(n):
     l = []
-    for i in range(1, 400):
+    for i in range(1, 500):
         if issmith(i) and not isprime(i):
             l.append(i)
     return l[n]
