@@ -6,4 +6,16 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
+	if n<0:
+		n = -n
+	l = list(map(int, str(n)))
+	dct = {}
+	count = 1
+	for i in range(len[l] - 1):
+		if l[i] == l[i+1]:
+			count = 0
+			if l[i] in dct:
+				dct[l[i]] = dt[l[i]] + 1
+			else:
+				dct[l[i]] = 1
 	pass
