@@ -6,7 +6,7 @@
 # counted twice, thus making 4 a Smith Number.
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
-
+import math
 def isprime(n):
     if(n>1):
         for i in range(2,n):
@@ -17,7 +17,8 @@ def isprime(n):
 def sumofdig(n):
     x = 0
     while n>0:
-        x = x + n%10
+        k = n%10
+        x = x + k
         n = n//10
     return x
 
@@ -33,13 +34,21 @@ def sumoffact(n):
     if n>2:
         l.append(int(n))
     s = 0
-    for l in l:
+    for i in l:
         if len(str((i))) == 1:
             s = s + i
         elif len(str(i) > 1 and 1 is not n):
             s = s + sumofdig(i)
         return s
+def issmith(n):
+    if sumofdig(n) == sumoffact(n):
+        return True
+    else:
+        return False
+
 def fun_nth_smithnumber(n):
-
-
-    return 1
+    l = []
+    for i in range(1, 400):
+        if issmith(i) and not isprime(i):
+            l.append(i)
+    return l[n]
