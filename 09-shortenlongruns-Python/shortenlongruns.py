@@ -17,7 +17,7 @@ def shortenlongruns(L, k):
 		if L[i] not in l:
 			l.append(L[i])
 			n=1
-		elif(L[i] == l[i-1]):
+		elif(L[i] == L[i-1]):
 			n = n+1
 			if n<k:
 				l.append(L[i])
