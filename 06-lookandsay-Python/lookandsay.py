@@ -11,7 +11,7 @@ def lookandsay(a):
 	# Your code goes here
 	x = len(a)
 	k = 0
-	l1 = []
+	r = []
 	n = a[0]
 	if (x == 0):
 		return []
@@ -23,7 +23,7 @@ def lookandsay(a):
 				n = a[i]
 				k=i
 			if i == len(a)-1:
-				l1 = len(a[k:])
+				r = len(a[k:])
 				r = r+[(l1,n)]
 		return r
 
