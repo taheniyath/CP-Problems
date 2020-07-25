@@ -10,7 +10,7 @@
 def lookandsay(a):
 	# Your code goes here
 	x = len(a)
-	cout = 0
+	k = 0
 	l1 = []
 	n = a[0]
 	if (x == 0):
