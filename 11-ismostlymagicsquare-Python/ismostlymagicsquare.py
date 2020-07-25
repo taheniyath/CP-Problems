@@ -23,4 +23,4 @@ def ismostlymagicsquare(a):
 	if d==1:
 		return True
 	return False
-	pass
+	# pass
