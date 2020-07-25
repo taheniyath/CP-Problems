@@ -20,4 +20,4 @@ def inverselookandsay(a):
 			for i in range(m):
 				l1.append(n)
 	return l1
-	pass
+	# pass
