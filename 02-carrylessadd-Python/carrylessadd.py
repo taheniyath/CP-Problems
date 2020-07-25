@@ -19,7 +19,7 @@ def fun_carrylessadd(x, y):
 		sum = (sum1*n) + sum
 		x = math.floor(x/10)
 		y = math.floor(y/10)
-		m = m*10
+		n = n*10
 	s = str(sum)
 	s.strip("0")
 	return int(s)
