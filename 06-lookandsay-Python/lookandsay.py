@@ -12,14 +12,19 @@ def lookandsay(a):
 	x = len(a)
 	cout = 0
 	l1 = []
+	n = a[0]
 	if (x == 0):
 		return []
 	else:
-		for i in range (0, x-1):
-			for j in range (i+1,x):
-				if (a[i] == a[j]):
-					cout = cout+1
-				
-			l1.extend((i,cout))
-		return l1
+		for i in range (0, x):
+			if a[i]!=n:
+				l1 = len(a[k:i])
+				r = r+[(l1,n)]
+				n = a[i]
+				k=i
+			if i == len(a)-1:
+				l1 = len(a[k:])
+				r = r+[(l1,n)]
+		return r
+
 	# pass
