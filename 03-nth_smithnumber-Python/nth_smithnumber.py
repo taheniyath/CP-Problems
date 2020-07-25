@@ -30,7 +30,7 @@ def sumoffact(n):
     for i in range(3, int(math.sqrt(n))+1,2):
         while n%i == 0:
             l.append(int(i))
-            n = n/1
+            n = n/i
     if n>2:
         l.append(int(n))
     s = 0
