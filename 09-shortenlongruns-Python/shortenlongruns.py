@@ -12,6 +12,7 @@
 def shortenlongruns(L, k):
 	# Your code goes here
 	x = len(L)
+	l = []
 	for i in range(x):
 		if(L[i] == l[i-1]):
 			n = n+1
