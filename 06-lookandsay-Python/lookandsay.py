@@ -16,14 +16,14 @@ def lookandsay(a):
 	if (x == 0):
 		return []
 	else:
-		for i in range (0, x):
+		for i in range ( x):
 			if a[i]!=n:
 				l1 = len(a[k:i])
 				r = r+[(l1,n)]
 				n = a[i]
 				k=i
 			if i == len(a)-1:
-				r = len(a[k:])
+				l1 = len(a[k:])
 				r = r+[(l1,n)]
 		return r
 
