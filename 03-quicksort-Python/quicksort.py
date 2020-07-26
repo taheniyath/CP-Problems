@@ -9,7 +9,7 @@ def quicksort(array):
 	if len(array)>1:
 		k = array[0]
 		for i in array:
-			if i<p:
+			if i<k:
 				a.append(i)
 			elif i==p:
 				b.append(i)
