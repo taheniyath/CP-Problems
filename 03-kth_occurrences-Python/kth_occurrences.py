@@ -5,6 +5,17 @@
 
 
 def fun_kth_occurrences(s, n):
-	return 'a'
+	dct = {}
+	for i in s:
+		if i not in dct.keys():
+			dct[i] = 1
+		else:
+			dct[i] = dct[i] + 1
+	dct1 = {k:v for k,v in sorted(dct.items(),key = lambda item:item[1])}
+	l = [{dct1[k]:k}for k in dct1]
+	l.reverse()
+	a=l[n-1].values()
+	r=list(a)[0]  
+	return r
 
 
