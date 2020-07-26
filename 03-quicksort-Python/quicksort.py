@@ -5,7 +5,7 @@ def quicksort(array):
 	# Your code goes here
 	a = []
 	b = []
-	d = []
+	c = []
 	if len(array)>1:
 		k = array[0]
 		for i in array:
