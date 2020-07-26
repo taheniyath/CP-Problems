@@ -11,7 +11,7 @@ def quicksort(array):
 		for i in array:
 			if i<k:
 				a.append(i)
-			elif i==p:
+			elif i==k:
 				b.append(i)
 			else:
 				c.append(i)
