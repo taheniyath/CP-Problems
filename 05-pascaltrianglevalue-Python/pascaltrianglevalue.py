@@ -29,4 +29,4 @@ def fun_pascaltrianglevalue(row, col):
 			if col<1:
 				return list[i][col]
 			else:
-				return 0
+				return 1
