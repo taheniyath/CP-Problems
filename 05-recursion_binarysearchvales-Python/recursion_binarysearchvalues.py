@@ -25,7 +25,7 @@ def recurr(oldList,first,last,v,newList):
 		return newList
 	else:
 		if v < oldList[mid]:
-			newLast = mid+1
+			newLast = mid-1
 			return recurr(oldList,first,newLast,v,newList)
 		else:
 			newFirst = mid+1
