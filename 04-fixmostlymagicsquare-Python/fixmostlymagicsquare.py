@@ -30,7 +30,7 @@ def fixmostlymagicsquare(L):
 			s=s+L[j][i]
 		a.append(s)
 	for i in range(len(a)):
-		if(a.count(a[i]==1)):
+		if(a.count(a[i])==1):
 			q=i
 	final = result1-result
 	if(result>0):
