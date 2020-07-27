@@ -9,7 +9,7 @@
 
 def pascal(row):
 	l = []
-	for i in range(0,row1):
+	for i in range(0,row+1):
 		t = []
 		if(i==1):
 			for i in range(i+1):
