@@ -7,6 +7,28 @@
 
 
 
-
+def pascal(row):
+	l = []
+	for i in range(0,row1):
+		t = []
+		if(i==1):
+			for i in range(i+1):
+				t.append(1)
+		if(i>1):
+			t.append(1)
+			for k in range(0,len(l[i-1])-1):
+				t.append(l[i-1][k]+ l[i-1][k+1])
+			t.append(1)
+		l.append(t)
+	return l
 def fun_pascaltrianglevalue(row, col):
+	list = pascal(row)
+	for i in range(len(list)):
+		if i==row:
+			l=len(list[i])
+			if col<1:
+				return list[i][col]
+			else:
+				return 0
+
 	return 1
