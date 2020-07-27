@@ -7,7 +7,7 @@ def recurr(n,count,l):
 		return l
 	else:
 		n = n // 3
-		count += 1
+		count += 2
 		num = 3
 		return recurr(n,count,l+[num*count])
 def recursion_powersof3ton(n):
