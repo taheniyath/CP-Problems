@@ -7,20 +7,21 @@
 
 
 def fun_set_kth_digit(n, k, d):
+	num = list(str(n))
 	if(n<0):
-		if k<len(dig):
-			dig[len(dig)-1-k]=str(d)
-			dig.insert(0,".")
-			return int("".join(dig))
+		if k<len(num):
+			num[len(num)-1-k]=str(d)
+			num.insert(0,".")
+			return int("".join(num))
 		else:
-			dig.insert(0,str(d))
-			dig.insert(0,"-")
-			return int("".join(dig))
+			num.insert(0,str(d))
+			num.insert(0,".")
+			return int("".join(num))
 	else:
-		if k<len(dig):
-			dig[len(dig)-1-k]=str(d)
-			return int("".join(dig))
+		if k<len(num):
+			num[len(num)-1-k]=str(d)
+			return int("".join(num))
 		else:
-			dig.insert(0,str(d))
-			return int("".join(dig))
+			num.insert(0,str(d))
+			return int("".join(num))
 
