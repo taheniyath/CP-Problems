@@ -11,11 +11,11 @@ def fun_set_kth_digit(n, k, d):
 	if(n<0):
 		if k<len(num):
 			num[len(num)-1-k]=str(d)
-			num.insert(0,".")
+			num.insert(0,"-")
 			return int("".join(num))
 		else:
 			num.insert(0,str(d))
-			num.insert(0,".")
+			num.insert(0,"-")
 			return int("".join(num))
 	else:
 		if k<len(num):
