@@ -17,13 +17,13 @@ def recursion_secondlargest(L):
 	# Your code goes here
 	if len(L) <= 0:
 		return None
-	largest = L[0]
+	largest = L[1]
 	secLargest = None
 	for i in L[1:]:
 		if i> largest:
 			secLargest = largest
 			largest = i
-		elif secLargest == None or secLargest <i:
+		elif secLargest == None or secLargest<i:
 			secLargest = i
 	return secLargest
 
