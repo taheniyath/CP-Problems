@@ -12,7 +12,7 @@ def pascal(row):
 	for i in range(0,row+1):
 		t = []
 		if(i==0):
-			t.append(0)
+			t.append(1)
 		if(i==1):
 			for i in range(i+1):
 				t.append(1)
@@ -31,4 +31,4 @@ def fun_pascaltrianglevalue(row, col):
 			if col<l:
 				return list[i][col]
 			else:
-				return 1
+				return 0
