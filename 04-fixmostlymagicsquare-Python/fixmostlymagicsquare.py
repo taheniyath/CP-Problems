@@ -27,7 +27,7 @@ def fixmostlymagicsquare(L):
 	for i in range(len(L)):
 		s=0
 		for j in range(len(L)):
-			s=s+L[i][j]
+			s=s+L[j][i]
 		a.append(s)
 	for i in range(len(a)):
 		if(a.count(a[i]==1)):
@@ -36,7 +36,7 @@ def fixmostlymagicsquare(L):
 	if(result>0):
 		L[p][q]=L[p][q]-final
 	else:
-		L[p][q]=L[p][q]-final
+		L[p][q]=L[p][q]+final
 	return L
 	# pass
 	# Your code goes here
