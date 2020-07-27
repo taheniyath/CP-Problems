@@ -37,6 +37,6 @@ def fixmostlymagicsquare(L):
 		[p][q]=l[p][q]-final
 	else:
 		[p][q]=[p][q]-final
-	return 1
+	return L
 	pass
 	# Your code goes here
