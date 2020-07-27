@@ -12,7 +12,7 @@ def fixmostlymagicsquare(L):
 	p = 0
 	q = 0
 	result = 0
-	result = 0
+	result1 = 0
 	for i in L:
 		s=0
 		for j in i:
@@ -34,9 +34,9 @@ def fixmostlymagicsquare(L):
 			q=i
 	final = result1-result
 	if(result>0):
-		[p][q]=l[p][q]-final
+		L[p][q]=l[p][q]-final
 	else:
-		[p][q]=[p][q]-final
+		L[p][q]=[p][q]-final
 	return L
 	# pass
 	# Your code goes here
