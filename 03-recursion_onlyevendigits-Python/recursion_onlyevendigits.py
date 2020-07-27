@@ -13,10 +13,13 @@ def iseven(n):
 		return 0
 	else:
 		temp = n%10
-		if n % 2 == 0:
+		if temp % 2 == 0:
 			return iseven(n//10)*10 +temp
 		else:
 			return iseven(n//10)
 			
 def fun_recursion_onlyevendigits(l): 
+	if not l:
 		return []
+
+	return [iseven(l[0])]+fun_recursion_onlyevendigits(l[1:])
