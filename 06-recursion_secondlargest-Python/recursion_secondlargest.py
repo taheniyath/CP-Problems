@@ -15,7 +15,7 @@
 
 def recursion_secondlargest(L):
 	# Your code goes here
-	if len(L) <= 0:
+	if len(L) < 0:
 		return None
 	largest = L[1]
 	secLargest = None
