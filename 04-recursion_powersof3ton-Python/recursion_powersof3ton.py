@@ -12,7 +12,7 @@ def recurr(n,count,l):
 		return recurr(n,count,l+[num**count])
 def recursion_powersof3ton(n):
 	# Your code goes here
-	if int(n) < 0:
+	if int(n) <= 0:
 		return None
 	l = []
 	count = -1
