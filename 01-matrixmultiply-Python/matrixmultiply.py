@@ -5,7 +5,19 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    return None
+    list1 = []
+    if(len(m1) != len(m2) or len(m1[0]) != len(m2[0])):
+        return None
+    else:
+        for i in range(len(m1)):
+            if i>0 and len(m1[i] != len(m2[i])):
+                return None
+            res = []
+            for j in range (len(m1[0])):
+                res.append(m1[i][j]* m2[i][j])
+            list1.append(res)
+        return list1
+    # return None
 
 
 
