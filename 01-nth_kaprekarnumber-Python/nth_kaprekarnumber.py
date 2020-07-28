@@ -8,6 +8,12 @@
 
 
 import math
-
+def digCount(n):
+    count = 0
+    n = abs(n)
+    while (n>=10):
+        n = n//10
+        count += 1
+    return count + 1
 def fun_nth_kaprekarnumber(n):
     return 1;
