@@ -4,12 +4,13 @@
 # (that is, 3). If L is empty, return 0. You may not use loops/iteration in this problem.
 
 def recurr(l,flag):
-	if flag:
-		return l[0]+recurr(l[1:],0)
-	return -l[0] + recurr(l[1:],1)	
-def fun_recursions_alternatingsum(l): 
 	if (len(l) == 0):
 		return 0
 	else:
-		flag = 1
-		return recurr(l,flag)
+		if flag:
+			return l[0] + recurr(l[1:],0)
+		return -l[0] + recurr(l[1:],1)	
+def fun_recursions_alternatingsum(l): 
+
+	flag = True
+	return recurr(l,flag)
