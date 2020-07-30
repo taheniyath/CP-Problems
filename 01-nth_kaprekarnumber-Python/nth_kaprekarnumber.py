@@ -9,6 +9,8 @@
 
 import math
 def digitCount(n):
+    if n == 0: 
+        return 1
     count = 0
     n = abs(n)
     while (n>=0):
@@ -16,14 +18,26 @@ def digitCount(n):
         count += 1
     return count 
 
+def sumPartition(n, partitionSize):
+    lPart = 0
+    rPart = 0
+    m = n
+    for i in range(partitionSize):
+        nthDigit = m%10
+        rPart += nthDigit * (10 ** i)
+        m //= 10
+    if rPart == 0:
+        return -1
+    lPart = (n - rPart) // (10 ** partitionSize)
+    return lPart + rPart
+
 def is_kaprekarNumber(n):
-    p = digitCount(n)
-    b = (n**2) % (10**p)
-    c = (n**2 - b)/(10**p)
-    if(b+c) == n:
-        return True
-    else:
-        return False
+    square = n**2
+    numDigits = digitCount(square)
+    for i in range(numDigits):
+        if sumPartition(square, i+1) == n:
+            return True
+    return False
 def fun_nth_kaprekarnumber(n):
     found = 0
     guess = 0
