@@ -11,10 +11,10 @@ import math
 def digitCount(n):
     count = 0
     n = abs(n)
-    while (n>=10):
+    while (n>=0):
         n = n//10
         count += 1
-    return count + 1
+    return count 
 
 def is_kaprekarNumber(n):
     p = digitCount(n)
