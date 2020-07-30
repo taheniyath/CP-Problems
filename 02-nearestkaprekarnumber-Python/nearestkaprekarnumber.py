@@ -11,6 +11,33 @@
 
 
 import math
+def digitCount(n):
+    count = 0
+    n = abs(n)
+    while (n>=10):
+        n = n//10
+        count += 1
+    return count +1
 
+def is_kaprekarNumber(n):
+    p = digitCount(n)
+    b = (n**2) % (10**p)
+    c = (n**2 - b)/(10**p)
+    if(b+c) == n:
+        return True
+    else:return False
 def fun_nearestkaprekarnumber(n):
-    return 1
+    bigger = n
+    smaller = n
+    counter_up = 0
+    countere_down = 0
+    while not is_kaprekarNumber(bigger):
+        bigger += 1
+        counter_up += 1
+    while not is_kaprekarNumber(smaller):
+        smaller -= 1
+        counter_down += 1
+    if counter_up < counter_down:
+        return bigger
+    else:
+        return smaller
