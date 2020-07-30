@@ -17,7 +17,7 @@ def digitCount(n):
     while (n>=10):
         n = n//10
         count += 1
-    return count +1
+    return count + 1
 
 def is_kaprekarNumber(n):
     p = digitCount(n)
@@ -26,11 +26,12 @@ def is_kaprekarNumber(n):
     if(b+c) == n:
         return True
     else:return False
+
 def fun_nearestkaprekarnumber(n):
     bigger = n
     smaller = n
     counter_up = 0
-    countere_down = 0
+    counter_down = 0
     while not is_kaprekarNumber(bigger):
         bigger += 1
         counter_up += 1
