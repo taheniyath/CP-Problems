@@ -27,7 +27,7 @@ def is_kaprekarNumber(n):
 def fun_nth_kaprekarnumber(n):
     found = 0
     guess = 0
-    while found <= n:
+    while found <= n: 
         guess += 1
         if(is_kaprekarNumber(guess)):
             found += 1
