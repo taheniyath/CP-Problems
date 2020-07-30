@@ -14,8 +14,8 @@ def digitCount(n):
     count = 0
     n = abs(n)
     while (n>=0):
-        n = n//10
         count += 1
+        n = n//10
     return count 
 
 def sumPartition(n, partitionSize):
