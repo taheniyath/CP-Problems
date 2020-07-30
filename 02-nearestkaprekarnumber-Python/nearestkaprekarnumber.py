@@ -17,7 +17,7 @@ def digitCount(n):
     while (n>=10):
         n = n//10
         count += 1
-    return count +1
+    return count +2
 
 def is_kaprekarNumber(n):
     p = digitCount(n)
